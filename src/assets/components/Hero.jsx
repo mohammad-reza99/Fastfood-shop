@@ -12,7 +12,7 @@ const Hero = () => {
             Foods <span className="text-orange-500">Delivered</span>
           </h1>
         </div>
-        <img src={bImg} alt="/" />
+        <img className="w-full max-h-[500px] object-cover" src={bImg} alt="/" />
       </div>
     </div>
   );
