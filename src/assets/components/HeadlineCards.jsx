@@ -7,7 +7,6 @@ const HeadlineCards = () => {
   return (
     <>
       <div className="max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6">
-        {/* Card 1 */}
         <div className="rounded-xl relative">
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white ">
             <p className="font-bold text-2xl pt-4">Sun's Out, BOGO's Out</p>
@@ -23,7 +22,6 @@ const HeadlineCards = () => {
           />
         </div>
 
-        {/* Card 2 */}
         <div className="rounded-xl relative">
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white ">
             <p className="font-bold text-2xl pt-4">New Restaurants</p>
@@ -39,7 +37,6 @@ const HeadlineCards = () => {
           />
         </div>
 
-        {/* Card 3 */}
         <div className="rounded-xl relative">
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white ">
             <p className="font-bold text-2xl pt-4">We Deliver Desserts too</p>
