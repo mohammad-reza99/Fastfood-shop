@@ -9,6 +9,9 @@ import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { FaWallet, FaUserFriends } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { DynamicIcon } from "lucide-react/dynamic";
+import navItems from "../data/navItems.json";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -62,14 +65,22 @@ const Navbar = () => {
         </h2>
         <nav>
           <ul className=" flex flex-col p-4 text-gray-800">
-            <li className=" text-xl py-4 flex">
-              <TbTruckDelivery size={25} className="mr-4" /> Orders
+            {navItems.map((item) => (
+              <li className="text-xl py-4 flex" key={item.id}>
+                <Link to={item.link} className="flex">
+                  <DynamicIcon name={item.icon} size={25} />
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            {/* <li className=" text-xl py-4 flex">
+              <TbTruckDelivery size={25} className="mr-4" /> Home
             </li>
             <li className=" text-xl py-4 flex">
-              <MdFavorite size={25} className="mr-4" /> Favorites
+              <MdFavorite size={25} className="mr-4" /> About
             </li>
             <li className=" text-xl py-4 flex">
-              <FaWallet size={25} className="mr-4" /> Wallet
+              <FaWallet size={25} className="mr-4" /> Content
             </li>
             <li className=" text-xl py-4 flex">
               <MdHelp size={25} className="mr-4" /> Help
@@ -82,7 +93,7 @@ const Navbar = () => {
             </li>
             <li className=" text-xl py-4 flex">
               <FaUserFriends size={25} className="mr-4" /> Invite Friends
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
