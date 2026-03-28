@@ -62,7 +62,7 @@ A modern and responsive food ordering storefront built with React, Vite, Tailwin
 Clone the project:
 
 ```bash
-git clone https://github.com/mohammad-reza99/Fastfood-shop.git
+git clone https://fastfood-shop.vercel.app
 ```
 
 🎯 Project Goal
