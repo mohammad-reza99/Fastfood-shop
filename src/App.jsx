@@ -1,34 +1,23 @@
-import { useState } from "react";
-import React from "react";
-import Navbar from "./assets/components/Navbar";
-import Hero from "./assets/components/Hero";
-import HeadlineCards from "./assets/components/HeadlineCards";
-import Food from "./assets/components/Food";
-import Category from "./assets/components/Category";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Content from "./Pages/Content";
+import Contact from "./Pages/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/content" element={<Content />} />
-        </Routes>
-        <Category />
-      </BrowserRouter>
+    <BrowserRouter>
+      <Navbar />
 
-      <Hero />
-      <HeadlineCards />
-      <Food />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 
