@@ -1,12 +1,80 @@
-# React + Vite
+# Best Eats
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive food ordering storefront built with React, Vite, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive food storefront UI
+- Reusable React components
+- Client-side routing with React Router
+- Modern hero section and promotional cards
+- Product grid with category and price filters
+- About and Contact pages
+- Mobile-friendly navigation
+- Clean and scalable project structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
+- React Icons
+
+---
+
+## 📄 Pages
+
+- Home
+- About
+- Contact
+
+---
+
+## 🧩 Components
+
+- Navbar
+- Hero
+- HeadlineCards
+- Food
+- Category
+- Footer
+
+---
+
+## 📸 Screenshots
+
+![Home Page](./public/screenshots/footshop-header.png)
+![Hero Section](./public/screenshots/main-foodshop.png)
+![Food Section](./public/screenshots/menu-foodshop.png)
+![Contact Page](./public/screenshots/category-foodshop.png)
+![Footer Page](./public/screenshots/footer-foodshop.png)
+
+---
+
+## 🚀 Getting Started
+
+Clone the project:
+
+```bash
+git clone https://github.com/mohammad-reza99/Fastfood-shop.git
+```
+
+🎯 Project Goal
+
+This project was built to practice component-based architecture, responsive storefront UI design, routing, filtering logic, and reusable frontend development with React.
+
+---
+
+🔧 Future Improvements
+Add real search functionality
+Add cart state management
+Add product detail pages
+Improve accessibility
+Connect to a backend or API
+Add animations and smoother interactions
